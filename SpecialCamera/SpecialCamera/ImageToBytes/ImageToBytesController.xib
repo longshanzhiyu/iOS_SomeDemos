@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageToBytesController">
+            <connections>
+                <outlet property="imageView" destination="4N5-49-ksL" id="gTm-Ca-StY"/>
+                <outlet property="imageView1" destination="qE3-eo-j4F" id="ii3-QW-TgH"/>
+                <outlet property="imageView2" destination="tuf-GL-Dxi" id="5yc-b0-cHr"/>
+                <outlet property="imageView3" destination="VlI-Ni-TIt" id="Eps-hy-2MB"/>
+                <outlet property="imageView4" destination="80L-eg-FjO" id="oKg-Xq-RTK"/>
+                <outlet property="imageView5" destination="m4B-Tp-0qx" id="oVe-UO-bc8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="4N5-49-ksL">
+                    <rect key="frame" x="16" y="100" width="134" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="eub-ft-pE6"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qE3-eo-j4F">
+                    <rect key="frame" x="170" y="100" width="134" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="YYe-vN-zq4"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="aVR-c0-a6I"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tuf-GL-Dxi">
+                    <rect key="frame" x="16" y="200" width="134" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="r1A-Xq-roK"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m4B-Tp-0qx">
+                    <rect key="frame" x="170" y="300" width="134" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2NH-h4-DUF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VlI-Ni-TIt">
+                    <rect key="frame" x="170" y="200" width="134" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="vtV-4Z-YgP"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="80L-eg-FjO">
+                    <rect key="frame" x="16" y="300" width="134" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="yxP-nA-G1e"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4N5-49-ksL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Aa2-BV-bom"/>
+                <constraint firstItem="4N5-49-ksL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="FSy-fm-REA"/>
+                <constraint firstItem="m4B-Tp-0qx" firstAttribute="top" secondItem="VlI-Ni-TIt" secondAttribute="bottom" constant="20" id="Fna-Fp-JHR"/>
+                <constraint firstItem="VlI-Ni-TIt" firstAttribute="trailing" secondItem="qE3-eo-j4F" secondAttribute="trailing" id="JP1-cd-O4m"/>
+                <constraint firstAttribute="trailing" secondItem="qE3-eo-j4F" secondAttribute="trailing" constant="16" id="KdF-j9-oC6"/>
+                <constraint firstItem="80L-eg-FjO" firstAttribute="leading" secondItem="tuf-GL-Dxi" secondAttribute="leading" id="MDq-HJ-SNC"/>
+                <constraint firstItem="4N5-49-ksL" firstAttribute="width" secondItem="qE3-eo-j4F" secondAttribute="width" id="QEg-7d-g4b"/>
+                <constraint firstItem="m4B-Tp-0qx" firstAttribute="trailing" secondItem="VlI-Ni-TIt" secondAttribute="trailing" id="VPX-Bb-3uh"/>
+                <constraint firstItem="qE3-eo-j4F" firstAttribute="leading" secondItem="4N5-49-ksL" secondAttribute="trailing" constant="20" id="WVk-x3-8cJ"/>
+                <constraint firstItem="tuf-GL-Dxi" firstAttribute="width" secondItem="4N5-49-ksL" secondAttribute="width" id="Ye9-pM-Ue7"/>
+                <constraint firstItem="tuf-GL-Dxi" firstAttribute="top" secondItem="4N5-49-ksL" secondAttribute="bottom" constant="20" id="ZtU-m7-Y6M"/>
+                <constraint firstItem="qE3-eo-j4F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="aju-74-QTQ"/>
+                <constraint firstItem="VlI-Ni-TIt" firstAttribute="width" secondItem="qE3-eo-j4F" secondAttribute="width" id="c4Z-Xc-hId"/>
+                <constraint firstItem="80L-eg-FjO" firstAttribute="width" secondItem="tuf-GL-Dxi" secondAttribute="width" id="hH1-1L-Ct0"/>
+                <constraint firstItem="VlI-Ni-TIt" firstAttribute="top" secondItem="qE3-eo-j4F" secondAttribute="bottom" constant="20" id="iyj-cU-ggN"/>
+                <constraint firstItem="m4B-Tp-0qx" firstAttribute="width" secondItem="VlI-Ni-TIt" secondAttribute="width" id="l1z-5z-x01"/>
+                <constraint firstItem="tuf-GL-Dxi" firstAttribute="leading" secondItem="4N5-49-ksL" secondAttribute="leading" id="nya-BK-JAS"/>
+                <constraint firstItem="80L-eg-FjO" firstAttribute="top" secondItem="tuf-GL-Dxi" secondAttribute="bottom" constant="20" id="xo7-mP-Xg0"/>
+            </constraints>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="timg" width="576" height="576"/>
+    </resources>
+</document>
